@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="function.js"> </script>
+    
+    <title>Create a New Event</title>
+</head>
+<body>
+    <form >
+     <label>Event type: <input type="text" required></label><br><br>
+     <label>Event Title: <input type="text" required></label><br><br>
+    
+     <! -- Date -->
+     <label for="datemin" required>Event dates:</label>              <! -- date min -->
+        <input type="date" id="datemin" value="datemin" min="1979-12-31">
+    
+     <label for="datemax" required>to:</label>                       <! -- date max -->
+        <input type="date" id="datemax" value="datemax" min='datemin'><br><br>
+
+     <label for="postingDate" required>Posting Date: </label>
+        <input type="date" id="postingDate" name="postingDate" min="2020-2-16"><br><br>
+
+        <input type="checkbox" id="CB1" name="CB1" value="CB1">
+           <label for="CB1"> Is Registration Required? </label><br>
+        <input type="checkbox" id="CB1" name="CB1" value="CB1">
+          <label for="CB1"> Is this event associated with any Family Programs? </label><br>
+        <input type="checkbox" id="CB1" name="CB1" value="CB1">
+          <label for="CB1"> Upon Registration Complete, Are Users to Receive an Auto Generated Email?  </label><br>
+        <input type="checkbox" id="CB1" name="CB1" value="CB1">
+          <label for="CB1"> Is There a Point of Contact?  </label><br>
+        <input type="checkbox" id="CB1" name="CB1" value="CB1">
+          <label for="CB1"> Is There a Hosting Comman Point of Contact? </label><br>
+
+        <input type="submit" value="send to server"  onclick="return dates()"/>
+        
+    </form>
+        
+    
+</body>
+</html> 
